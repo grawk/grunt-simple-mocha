@@ -9,6 +9,7 @@ interested in [grunt-mocha][othermocha].
 ## why this fork?
 
 I created this fork to add two pieces of functionality:
+
 1. The ability to run mocha multiple times from a single target
 2. The ability to store pass-through variables into a config file, for use by other aspects of the application under test
 
