@@ -6,6 +6,15 @@ and plugin-ized version of [this helpful Gist by johnkpaul][johnkpaul_gist].
 If you're looking to run client-side specs with PhantomJS, you might be
 interested in [grunt-mocha][othermocha].
 
+## why this fork?
+
+I created this fork to add two pieces of functionality:
+1. The ability to run mocha multiple times from a single target
+2. The ability to store pass-through variables into a config file, for use by other aspects of the application under test
+
+Both of the above, for me, facilitate doing selenium webdriver testing. For that, each mocha run is a different browser target. And, my selenium test scripts 
+use the passed-through variables to configure the test runs. Perhaps you'll find it useful for this or other purposes.
+
 ### Updating from 0.2.x to 0.3.x
 
 This task now depends on grunt 0.4.x. Please see the
